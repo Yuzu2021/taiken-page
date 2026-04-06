@@ -43,7 +43,7 @@ header h1 {
   font-size: 20px;
 }
 
-/* Instagram（小さく） */
+/* Instagram */
 .insta-header {
   width: 22px;
   opacity: 0.8;
@@ -53,116 +53,44 @@ header h1 {
   opacity: 1;
 }
 
-/* ナビ */
-nav {
-  background: #000;
-}
-.nav-inner {
-  padding: 8px 0;
-}
-nav a {
-  color: #fff;
-  margin-right: 15px;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-/* ヒーロー */
-.hero {
+/* ===== CTAエリア ===== */
+.cta-character {
   text-align: center;
-  padding: 70px 15px;
+  padding: 40px 15px;
 }
 
-.impact {
-  font-size: 34px;
-  color: #ff0000;
-  font-weight: bold;
-  transform: rotate(-5deg);
-  margin-bottom: 10px;
-}
-
-.hero h1 {
-  font-size: 26px;
-  margin: 10px 0;
-}
-
-.hero p {
-  font-size: 15px;
-  opacity: 0.9;
-}
-
-/* CTA */
-.cta {
-  background: #06C755;
-  padding: 14px 26px;
-  display: inline-block;
-  margin-top: 20px;
-  text-decoration: none;
-  border-radius: 50px;
-  font-size: 16px;
-}
-
-/* セクション */
-.section {
-  padding: 50px 0;
-  text-align: center;
-}
-
-.section h2 {
-  font-size: 22px;
-  margin-bottom: 20px;
-}
-
-/* トレーナー */
-#about {
-  background: #fff;
-  color: #000;
-}
-
-#about img {
-  width: 220px;
+/* 画像修正 ←これが重要 */
+.cta-character img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
   border-radius: 12px;
   margin-bottom: 15px;
 }
 
-/* メニュー */
-.flex {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+/* 残り人数 */
+.limit {
+  color: #ff4444;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
-/* カード */
-.menu-btn {
-  padding: 22px;
-  border-radius: 15px;
-  text-decoration: none;
+/* ボタン */
+.cta-btn {
+  display: inline-block;
+  background: #06C755;
   color: #fff;
+  padding: 14px 26px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
   font-weight: bold;
-  display: block;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
   transition: 0.2s;
 }
 
-.menu-btn:hover {
-  transform: translateY(-5px);
+.cta-btn:hover {
+  transform: scale(1.05);
 }
-
-.menu-btn h3 {
-  margin: 0;
-  font-size: 18px;
-}
-
-.menu-btn p {
-  font-size: 13px;
-  margin-top: 6px;
-  opacity: 0.9;
-}
-
-/* カラー */
-.trial { background: #ff6600; }
-.diet { background: #e60023; }
-.bodymake { background: #007bff; }
 
 /* フッター */
 footer {
@@ -183,13 +111,6 @@ footer {
   text-decoration: none;
   font-size: 14px;
 }
-
-/* PC */
-@media(min-width:768px){
-  .flex {
-    flex-direction: row;
-  }
-}
 </style>
 </head>
 
@@ -204,19 +125,17 @@ footer {
   </div>
 </header>
 
-  
 <section class="cta-character">
     <img src="taikengym.jpg" alt="フィジークキャラクター">
-     <p class="limit">
+
+    <p class="limit">
       【残り3名】今月の新規受付はあとわずかです
-     </p>
-     <a href="https://lin.ee/xUmAtVC" class="cta-btn">
+    </p>
+
+    <a href="https://lin.ee/xUmAtVC" class="cta-btn">
       LINEで無料相談する
-     </a>
-  </div>
+    </a>
 </section>
-
-
 
 <footer>
   <p>© apricot gym</p>
